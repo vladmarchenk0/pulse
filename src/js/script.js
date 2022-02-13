@@ -1,3 +1,24 @@
+
+
+$(document).ready(function(){
+    $('.carousel__inner').slick({
+        speed: 1200,
+        adaptiveHeight: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icon/arrow_icon.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icon/right_arrow.svg"></button>',
+        responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                dots: true,
+                arrows: false
+              }
+            }
+        ]
+      });
+  });
+      
+
 // number - числа, цена, зар.плата, все данные связанные с цифрами 
 // sting (строка) - записать необходимо через "", '', ``, это любые данные которые мы можем передать словами
 // true/false - булиновые данные, которые имеют две степени вариации, да или нет. 
